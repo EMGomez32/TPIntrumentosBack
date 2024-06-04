@@ -1,7 +1,6 @@
 package com.instrumento.Instrumentos.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -23,6 +22,8 @@ public class Instrumentos extends EntityId{
     private String descripcion;
 
 
-
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "idCategoria")
+    private Categoria categoria;
 
 }

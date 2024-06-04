@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 //@CrossOrigin(origins = "http://localhost:8080")
-@RequestMapping("/Instrumentos")
+@RequestMapping("/instrumentos")
 public class InstrumentoController {
 
 
