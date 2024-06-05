@@ -22,7 +22,7 @@ public class Instrumentos extends EntityId{
     private String descripcion;
 
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "idCategoria")
     private Categoria categoria;
 
